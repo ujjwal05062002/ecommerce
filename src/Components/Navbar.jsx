@@ -125,9 +125,9 @@ export default function Navbar() {
                         </li>
                         <li className="pe-3">
                           <a href="#">
-                            <span class="material-symbols-outlined">
-                              person
-                            </span>
+                          <span class="material-symbols-outlined">
+person
+</span>
                             {/* <svg className="user"> */}
                             {/* <use xlink:href="#user"></use> */}
                             {/* </svg> */}
