@@ -4,56 +4,56 @@ export default function Home() {
   return (
     <div>
       <>
-        <section id="billboard" class="position-relative overflow-hidden bg-light-blue">
-          <div class="swiper main-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="container">
-                  <div class="row d-flex align-items-center">
-                    <div class="col-md-6">
-                      <div class="banner-content">
-                        <h1 class="display-2 text-uppercase text-dark pb-5">Your Products Are Great.</h1>
-                        <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="image-holder">
-                        <img src="images/banner-image.png" alt="banner" />
-                      </div>
-                    </div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">      <div class="swiper-slide">
+            <div class="container">
+              <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                  <div class="banner-content">
+                    <h1 class="display-2 text-uppercase text-dark pb-5">Your Products Are Great.</h1>
+                    <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="image-holder">
+                    <img src="images/banner-image.png" alt="banner" />
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="container">
-                  <div class="row d-flex flex-wrap align-items-center">
-                    <div class="col-md-6">
-                      <div class="banner-content">
-                        <h1 class="display-2 text-uppercase text-dark pb-5">Technology Hack You Won't Get</h1>
-                        <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
-                      </div>
+            </div>
+          </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="row d-flex flex-wrap align-items-center">
+                  <div class="col-md-6">
+                    <div class="banner-content">
+                      <h1 class="display-2 text-uppercase text-dark pb-5">Technology Hack You Won't Get</h1>
+                      <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
                     </div>
-                    <div class="col-md-5">
-                      <div class="image-holder">
-                        <img src="images/banner-image.png" alt="banner" />
-                      </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="image-holder">
+                      <img src="images/banner-image.png" alt="banner" />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-icon swiper-arrow swiper-arrow-prev">
-            <span class="material-symbols-outlined">
-              arrow_back_ios
-            </span>
-          </div>
-          <div class="swiper-icon swiper-arrow swiper-arrow-next">
-            <span class="material-symbols-outlined">
-              arrow_back_ios
-            </span>
-          </div>
-        </section>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
         <section id="company-services" class="padding-large">
           <div class="container">
             <div class="row">
@@ -347,7 +347,7 @@ export default function Home() {
           </div>
           <div class="swiper-pagination position-absolute text-center"></div>
         </section>
-        <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge" style={{backgroundImage: "url('images/single-image1.png')", backgroundPosition: "right", backgroundRepeat: "no-repeat"}}>
+        <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge" style={{ backgroundImage: "url('images/single-image1.png')", backgroundPosition: "right", backgroundRepeat: "no-repeat" }}>
           <div class="row d-flex flex-wrap align-items-center">
             <div class="col-md-6 col-sm-12">
               <div class="text-content offset-4 padding-medium">
@@ -458,7 +458,7 @@ export default function Home() {
                         <i class="icon icon-review"></i>
                         <blockquote>“A blog is a digital publication that can complement a website or exist independently. A blog may include articles, short posts, listicles, infographics, videos, and other digital content.”</blockquote>
                         <div class="rating">
-                        <i className='fa fa-star'></i>
+                          <i className='fa fa-star'></i>
                           <i className='fa fa-star'></i>
                           <i className='fa fa-star'></i>
                           <i className='fa fa-star'></i>
@@ -504,6 +504,6 @@ export default function Home() {
         </section>
 
       </>
-    </div>
+    </div >
   );
 }
