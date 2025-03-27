@@ -10,39 +10,15 @@ export default function Home() {
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-inner">      <div class="swiper-slide">
-            <div class="container">
-              <div class="row d-flex align-items-center">
-                <div class="col-md-6">
-                  <div class="banner-content">
-                    <h1 class="display-2 text-uppercase text-dark pb-5">Your Products Are Great.</h1>
-                    <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <div class="image-holder">
-                    <img src="images/banner-image.png" alt="banner" />
-                  </div>
-                </div>
-              </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="..." class="d-block w-100" alt="..." />
             </div>
-          </div>
-            <div class="swiper-slide">
-              <div class="container">
-                <div class="row d-flex flex-wrap align-items-center">
-                  <div class="col-md-6">
-                    <div class="banner-content">
-                      <h1 class="display-2 text-uppercase text-dark pb-5">Technology Hack You Won't Get</h1>
-                      <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="image-holder">
-                      <img src="images/banner-image.png" alt="banner" />
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="..." />
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
