@@ -7068,7 +7068,7 @@ fieldset:disabled .btn {
     border-right-color: transparent;
     border-radius: 50%;
     -webkit-animation: .75s linear infinite spinner-border;
-    animation: .75s linear infinite spinner-border
+    animation: .75s linear infinite spinner-border;
 }
 
 .spinner-border-sm {
