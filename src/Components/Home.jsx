@@ -153,8 +153,12 @@ export default function Home() {
                 </div>
               </div>
               <Swiper
+                pagination={{ clickable: true }}
                 spaceBetween={50}
-                slidesPerView={2}
+                slidesPerView={4}
+                navigation
+                loop
+                speed={500}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
               >
