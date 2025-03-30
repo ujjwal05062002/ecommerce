@@ -1,4 +1,6 @@
 import React from 'react';
+// import { register } from 'swiper/element/bundle';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function Home() {
   return (
@@ -140,6 +142,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <section id="mobile-products" class="product-store position-relative padding-large no-padding-top">
           <div class="container">
             <div class="row">
@@ -149,9 +152,13 @@ export default function Home() {
                   <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
                 </div>
               </div>
-              <div class="swiper product-swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+              <Swiper
+                spaceBetween={50}
+                slidesPerView={2}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+              >
+                <SwiperSlide><div class="swiper-slide">
                     <div class="product-card position-relative">
                       <div class="image-holder">
                         <img src="images/product-item1.jpg" alt="product-item" class="img-fluid" />
@@ -171,8 +178,8 @@ export default function Home() {
                         <span class="item-price text-primary">$980</span>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
+                  </div></SwiperSlide>
+                <SwiperSlide><div class="swiper-slide">
                     <div class="product-card position-relative">
                       <div class="image-holder">
                         <img src="images/product-item2.jpg" alt="product-item" class="img-fluid" />
@@ -191,8 +198,8 @@ export default function Home() {
                         <span class="item-price text-primary">$1100</span>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
+                  </div></SwiperSlide>
+                <SwiperSlide>                  <div class="swiper-slide">
                     <div class="product-card position-relative">
                       <div class="image-holder">
                         <img src="images/product-item3.jpg" alt="product-item" class="img-fluid" />
@@ -211,8 +218,8 @@ export default function Home() {
                         <span class="item-price text-primary">$780</span>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
+                  </div></SwiperSlide>
+                <SwiperSlide><div class="swiper-slide">
                     <div class="product-card position-relative">
                       <div class="image-holder">
                         <img src="images/product-item4.jpg" alt="product-item" class="img-fluid" />
@@ -231,8 +238,8 @@ export default function Home() {
                         <span class="item-price text-primary">$1500</span>
                       </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
+                  </div></SwiperSlide>
+                  <SwiperSlide><div class="swiper-slide">
                     <div class="product-card position-relative">
                       <div class="image-holder">
                         <img src="images/product-item5.jpg" alt="product-item" class="img-fluid" />
@@ -251,7 +258,15 @@ export default function Home() {
                         <span class="item-price text-primary">$1300</span>
                       </div>
                     </div>
-                  </div>
+                  </div></SwiperSlide>
+              </Swiper>
+              <div class="swiper product-swiper">
+                <div class="swiper-wrapper">
+                  
+                  
+
+                  
+                  
                 </div>
               </div>
             </div>
